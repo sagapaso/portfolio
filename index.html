@@ -1,76 +1,139 @@
 <!DOCTYPE html>
-<html lang="ja" dir="ltr">
+<html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
-<meta name="description" content="ポートフォリオ" />
-<title>ポートフォリオ</title>
-<link rel="stylesheet" href="css/default.css">
-<script src="js/jquery-1.7.2.min.js"></script>
-<!--[if lte IE 9]>
-<script src="js/html5.js"></script>
-<script src="js/css3-mediaqueries.js"></script>
-<![endif]-->
-<link rel="stylesheet" href="css/common.css">
-<script src="js/smoothScroll.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <title>ポートフォリオ</title>
+  <link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+  <link href="css/reset.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/photoswipe/photoswipe.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/photoswipe/default-skin/default-skin.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
 </head>
+
 <body>
-<!--wrapperSt-->
-<div id="wrapper">
-	<header id="header">
-		<h1>ポートフォリオ</h1>
-		<a class="logo" href="#"><img src="images/common/header.gif" width="99" height="25" alt="ヘッダー"></a></header>
-	<!--nav_phSt-->
-	<nav id="nav_ph">
-		<ul>
-			<li class="nav01"><a href="#"></a>
-			<li class="nav02"><a href="#"></a>
-			<li class="nav03"><a href="#"></a>
-			<li class="nav04"><a href="#"></a>
-			<li class="nav05"><a href="#"></a>
-		</ul>
-	</nav>
-	<!--mainSt-->
-	<div id="main">
-		<h2><img src="images/common/main.gif" width="202" height="24" alt="メインビジュアル"></h2>
-	</div>
-	<!--navSt-->
-	<nav id="nav">
-		<ul>
-			<li class="nav01"><a href="#"></a>
-			<li class="nav02"><a href="#"></a>
-			<li class="nav03"><a href="#"></a>
-			<li class="nav04"><a href="#"></a>
-			<li class="nav05"><a href="#"></a>
-		</ul>
-	</nav>
-	<!--contentsSt-->
-	<div id="contents"> 
-		<!--content_leftSt-->
-		<div id="content_left">
-			<section class="left_box">
-				<div class="box01"><img src="images/common/box01.gif" width="20" height="25" alt="1"></div>
-				<div class="box02"><img src="images/common/box02.gif" width="20" height="25" alt="1"></div>
-				<div class="box03"><img src="images/common/box03.gif" width="20" height="25" alt="1"></div>
-				<div class="box04"><img src="images/common/box04.gif" width="20" height="25" alt="1"></div>
-				<div class="box05"><img src="images/common/box05.gif" width="20" height="25" alt="1"></div>
-				<div class="box06"><img src="images/common/box06.gif" width="20" height="25" alt="1"></div>
-				<div class="box07"><img src="images/common/box07.gif" width="20" height="25" alt="1"></div>
-				<div class="box08"><img src="images/common/box08.gif" width="20" height="25" alt="1"></div>
-			</section>
-			<section class="sub_content">
-				<h1><img src="images/common/sub_contents.gif" width="180" height="25" alt="サブコンテンツ"></h1>
-			</section>
-		</div>
-		<!--content_rightSt-->
-		<div id="content_right">
-			<aside id="aside">
-				<h1><img src="images/common/content_right.gif" alt="サブナビ" width="100" height="25"></h1>
-			</aside>
-		</div>
-	</div>
-	<!--footerSt-->
-	<footer id="footer"><small><img src="images/common/footer.gif" alt="フッター" width="97" height="24"></small></footer>
-</div>
+  <div id="wrapper">
+    <header id="header">
+      <h1 class="logo"><span class="logo-desc">PORTFOLIO</span></h1>
+    </header>
+
+    <main id="contents">
+      <section class="section" id="latestworks">
+        <div class="inner">
+          <div class="section-title-block">
+            <h2 class="section-title">LATEST WORKS</h2>
+            <p class="section-desc">最新の制作実績です。</p>
+          </div>
+          <div class="two-column-wrapper">
+            <div class="two-column-image">
+              <img src="img/latestworks/latestworks.jpg" alt="">
+            </div>
+            <div class="two-column-desc">
+              <div class="text">
+                作品タイトル：むらせ歯科医院<br /> 担当：Planning / Coding / WordPress<br /> 制作期間：1.5ヶ月
+                <br /> URL：
+                <a href="https://murasesika.com" target="_blank">https://murasesika.com</a><br />
+                <br /> コメント：
+                <p>
+					既存サイトからのリニューアル案件でした。一般的な歯科医院よりはページ数・ボリュームがありましたが、制作に関しては、お打ち合わせを重ねたこともあり、比較的順調に推移しました。
+				</p>
+				<p>ローンチ前にボトルネックとなったのは、ドメインの移管でした。何しろ手間と時間がかかりました。</p>
+				<p>
+					以前のサイトで使用していたドメインというのが、サーバーと一体になったもので、ドメインのみの利用は不可でした。
+					スペックの点でも足りませんでしたので、サーバー・ドメイン共にリプレースすることになりました。
+				</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="works">
+        <div class="inner">
+          <div class="section-title-block">
+            <h2 class="section-title">WORKS</h2>
+            <div class="section-desc">
+              <p class="text">
+                （※準備中）これまでの制作実績です。</p>
+            </div>
+          </div>
+<!--
+          <div class="card-wrapper my-gallery">
+            <figure class="card">
+              <a href="img/works/dammy.jpg" data-size="980x668" class="card-image">
+          			<img src="img/works/thumb/thumb_dammy.jpg" alt="" />
+          		</a>
+              <figcaption class="card-caption">
+                <p class="card-caption-title">作品タイトル</p>
+                <p class="card-caption-info">Design / Coding</p>
+                <p class="card-caption-url"><a class="url-link" href="＃" target="_blank">Link</a></p>
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <a href="img/works/dammy.jpg" data-size="980x668" class="card-image">
+                <img src="img/works/thumb/thumb_dammy.jpg" alt="" />
+              </a>
+              <figcaption class="card-caption">
+                <p class="card-caption-title">作品タイトル</p>
+                <p class="card-caption-info">Design / Coding</p>
+                <p class="card-caption-url"><a class="url-link" href="＃" target="_blank">Link</a></p>
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <a href="img/works/dammy.jpg" data-size="980x668" class="card-image">
+                <img src="img/works/thumb/thumb_dammy.jpg" alt="" />
+              </a>
+              <figcaption class="card-caption">
+                <p class="card-caption-title">作品タイトル</p>
+                <p class="card-caption-info">Design / Coding</p>
+                <p class="card-caption-url"><a class="url-link" href="＃" target="_blank">Link</a></p>
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <a href="img/works/dammy.jpg" data-size="980x668" class="card-image">
+                <img src="img/works/thumb/thumb_dammy.jpg" alt="" />
+              </a>
+              <figcaption class="card-caption">
+                <p class="card-caption-title">作品タイトル</p>
+                <p class="card-caption-info">Design / Coding</p>
+                <p class="card-caption-url"><a class="url-link" href="＃" target="_blank">Link</a></p>
+
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <a href="img/works/dammy.jpg" data-size="980x668" class="card-image">
+                <img src="img/works/thumb/thumb_dammy.jpg" alt="" />
+              </a>
+              <figcaption class="card-caption">
+                <p class="card-caption-title">作品タイトル</p>
+                <p class="card-caption-info">Design / Coding</p>
+                <p class="card-caption-url"><a class="url-link" href="＃" target="_blank">Link</a></p>
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <a href="img/works/dammy.jpg" data-size="980x668" class="card-image">
+                <img src="img/works/thumb/thumb_dammy.jpg" alt="" />
+              </a>
+              <figcaption class="card-caption">
+                <p class="card-caption-title">作品タイトル</p>
+                <p class="card-caption-info">Design / Coding</p>
+                <p class="card-caption-url"><a class="url-link" href="＃" target="_blank">Link</a></p>
+              </figcaption>
+            </figure>
+          </div>
+-->
+        </div>
+      </section>
+
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <p class="copyright">Copyright&copy;Youichi Kaneko. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </div>
+
 </body>
 </html>
